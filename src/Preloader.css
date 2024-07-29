@@ -1,0 +1,37 @@
+/* src/Preloader.css */
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff; /* Light background color for better visibility */
+    position: relative;
+}
+.leaf-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+.leaf-icon {
+    font-size: 5rem; /* Adjust size as needed */
+    color: #32cd32; /* Leaf green color */
+    animation: scale 1s infinite; /* Scale animation */
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333; /* Text color */
+}

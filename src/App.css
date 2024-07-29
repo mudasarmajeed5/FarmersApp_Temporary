@@ -1,0 +1,54 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #e6f2e6; /* Light green background */
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #4caf50; /* Darker green for the header */
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4caf50; /* Green background */
+    padding: 0.5rem 0;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5 1rem;
+}
+
+.footer-button {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-button:hover {
+    color: #cddc39; /* Lighter green for hover effect */
+}
