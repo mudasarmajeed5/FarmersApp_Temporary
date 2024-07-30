@@ -6,7 +6,7 @@ const Preloader = () => {
     return (
         <div className="preloader">
             <FaLeaf className="leaf-icon" />
-            <p className='.leaf-text text-2xl font-bold'>EcoGuard</p>
+            <p className='.leaf-text text-2xl font-bold'>IntelliGrow</p>
         </div>
     );
 };

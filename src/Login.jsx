@@ -2,12 +2,12 @@ import React from 'react'
 import Footer from './assets/Footer'
 const Login = () => {
   return (<>
-  
+
     <div className="min-h-screen relative z-[0] w-full flex items-center justify-center bg-green-500">
       <img src="https://w0.peakpx.com/wallpaper/998/17/HD-wallpaper-green-theme-background-whatsapp.jpg" className='absolute z-[-10] w-screen h-screen object-cover object-center' alt="" />
-      <div className="backdrop-filter backdrop:blur-md w-4/5 relative p-8  rounded-lg shadow-lg max-w-md">
-        <h2 className="text-2xl text-center font-bold text-green-500 mb-4">
-          Login
+      <div className="backdrop-filter backdrop:blur-md border w-4/5 relative p-8  rounded-lg shadow-lg max-w-md">
+        <h2 className="text-2xl text-center font-semibold  text-green-500 mb-4">
+          Login / SignUp
         </h2>
         <form action="#" method="POST">
           <div className="mb-4">
@@ -40,20 +40,22 @@ const Login = () => {
               required=""
             />
           </div>
-          <button
-            type="submit"
-            className="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-800 transition duration-300"
-          >
-            Login
-          </button>
+          <div className="flex justify-center flex-wrap items-center gap-4">
+            <button
+              type="submit"
+              className="min-w-fit bg-green-500 text-white px-2 py-1 hover:bg-green-800 transition duration-300"
+            >
+              Login
+            </button>
+            <a href="/home" className="min-w-fit bg-green-500 text-white px-2 py-1 hover:bg-green-800 transition duration-300">
+              SignIn as Guest
+            </a>
+          </div>
         </form>
-        <a href="/" className="block text-sm text-green-500 mt-4 hover:underline">
-          Go to Home
-        </a>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
-    </>
+  </>
   )
 }
 
